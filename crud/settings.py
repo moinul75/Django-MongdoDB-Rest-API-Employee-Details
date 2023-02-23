@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+import json
 
 import pymongo
 
@@ -82,7 +83,7 @@ WSGI_APPLICATION = 'crud.wsgi.application'
 
 
 
-
+DATABASES = json.loads(os.environ['DATABASES'])
 
 DATABASES = {
     'default': {
