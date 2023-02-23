@@ -3,7 +3,7 @@ djongo
 djangorestframework
 django-cors-headers
 dnspython
-pymongo
+pymongo==3.12.3
 sqlparse
 tzdata
 gunicorn
